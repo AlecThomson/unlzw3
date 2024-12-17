@@ -30,4 +30,3 @@ from unlzw3.unlzw import unlzw_fast
 from unlzw3.unlzw3 import unlzw
 
 __all__ = ["unlzw", "unlzw_fast"]
-
