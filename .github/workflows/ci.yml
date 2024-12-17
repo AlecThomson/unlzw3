@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: '3.x'
 
-    - run: pip install .[tests,lint]
+    - run: pip install .[tests,lint] --no-binary unlzw3
 
     - run: flake8
     - run: mypy
