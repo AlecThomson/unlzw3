@@ -5,6 +5,8 @@ on:
     paths:
       - "**.py"
       - ".github/workflows/ci.yml"
+  workflow_dispatch:
+
 
 jobs:
 
