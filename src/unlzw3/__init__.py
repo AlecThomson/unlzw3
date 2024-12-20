@@ -1,7 +1,9 @@
 """
+Cython implementation by AlecThomson
+
 Written by Brandon Owen, May 2016, brandon.owen@hotmail.com
 Adapted from original work by Mark Adler - orginal copyright notice below
--#
+
 Copyright (C) 2014, 2015 Mark Adler
 This software is provided 'as-is', without any express or implied
 warranty.  In no event will the authors be held liable for any damages
@@ -20,8 +22,9 @@ Mark Adler
 madler@alumni.caltech.edu
 """
 
-from .unlzw import unlzw
+from unlzw3_cython import unlzw
+from .unlzw_pure import unlzw as unlzw_pure
 
-__all__ = ["unlzw"]
+__all__ = ["unlzw", "unlzw_pure"]
 
-__version__ = "0.2.3"
+__version__ = "1.0.0"

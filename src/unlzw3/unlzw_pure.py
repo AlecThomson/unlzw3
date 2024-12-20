@@ -1,7 +1,9 @@
+from __future__ import annotations
+
 from pathlib import Path
 
 
-def unlzw(inp) -> bytes:
+def unlzw(inp: Path | bytes) -> bytes:
     """
     This function was adapted for Python from Mark Adler's C implementation
     https://github.com/umeat/unlzw

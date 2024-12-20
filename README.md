@@ -33,4 +33,4 @@ uncompressed_data = unlzw3.unlzw(Path('file.Z'))
 
 * reference C code: Mark Adler
 * pure Python implemetation: [Brandon Owen](https://github.com/umeat/unlzw)
-* modernization, test / CI and PyPi: Michael Hirsch
+* Cython implementation: [AlecThomson](https://github.com/AlecThomson)
