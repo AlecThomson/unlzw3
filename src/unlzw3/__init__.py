@@ -26,7 +26,7 @@ from __future__ import annotations
 from pathlib import Path
 import typing as T
 
-__version__ = "0.2.2"
+__version__ = "0.2.3"
 
 
 def unlzw(inp: T.Any) -> bytes:
@@ -72,8 +72,8 @@ def unlzw(inp: T.Any) -> bytes:
         raise TypeError("Unable to convert input data to bytearray")
 
     inlen = len(ba_in)
-    prefix: list[int] = [None] * 65536  # index to LZW prefix string
-    suffix: list[int] = [None] * 65536  # one-character LZW suffix
+    prefix: list[int] = [0] * 65536  # index to LZW prefix string
+    suffix: list[int] = [0] * 65536  # one-character LZW suffix
 
     # Process header
     if inlen < 3:
