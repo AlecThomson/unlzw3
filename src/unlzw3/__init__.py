@@ -22,7 +22,7 @@ Mark Adler
 madler@alumni.caltech.edu
 """
 
-from unlzw3_cython import unlzw
+from .unlzw3_cython import unlzw
 from .unlzw_pure import unlzw as unlzw_pure
 
 __all__ = ["unlzw", "unlzw_pure"]
